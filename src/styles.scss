@@ -1,1 +1,65 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --bg: #141110;
+  --bg-soft: #1b1716;
+  --surface: #211c1b;
+  --surface-2: #262120;
+  --line: rgb(255 255 255 / 0.08);
+  --red: #e11d33;
+  --red-soft: #c81328;
+  --red-faint: rgb(225 29 51 / 0.12);
+  --ink: #f1ebe8;
+  --muted: #a89d99;
+  --muted-2: #7d7270;
+  --font-display: 'Sora', 'Manrope', system-ui, sans-serif;
+  --font-body: 'Manrope', system-ui, -apple-system, 'Segoe UI', Roboto,
+    Helvetica, Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-family: var(--font-display);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+section[id] {
+  scroll-margin-top: 92px;
+}

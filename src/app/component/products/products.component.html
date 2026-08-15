@@ -1,0 +1,30 @@
+<section id="productos" class="products">
+  <header class="section-head">
+    <p class="section-kicker">Catálogo</p>
+    <h2>En tienda ahora</h2>
+  </header>
+
+  <div class="products-grid">
+    @for (game of games; track game.title) {
+      <article class="product-card">
+        <div
+          class="art"
+          role="img"
+          [attr.aria-label]="game.title"
+          [style.background-image]="'url(' + game.image + ')'"
+        ></div>
+
+        <div class="info">
+          <span class="badge">{{ game.platform }}</span>
+          <h3>{{ game.title }}</h3>
+          <p>{{ game.description }}</p>
+
+          <div class="row">
+            <span class="price">{{ game.price }}</span>
+            <button type="button" class="buy">Añadir</button>
+          </div>
+        </div>
+      </article>
+    }
+  </div>
+</section>

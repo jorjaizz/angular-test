@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +6,4 @@ import { Component, signal } from '@angular/core';
   standalone: false,
   styleUrl: './app.component.scss'
 })
-export class App {
-  protected readonly title = signal('primer-proyecto-angular');
-}
+export class App {}
