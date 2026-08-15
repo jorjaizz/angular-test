@@ -1,59 +1,19 @@
-# PrimerProyectoAngular
+# dptienda
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.1.3.
+**dptienda** es una tienda de videojuegos hecha con Angular. Tiene un estilo sencillo y con carácter: fondo oscuro con detalles en rojo, pensado para que se vea moderna y sin sobrecargar. La página está organizada en una sola vista que une el catálogo de juegos con un apartado sobre quiénes somos.
 
-## Development server
+## Componentes
 
-To start a local development server, run:
+La aplicación se compone de tres partes principales:
 
-```bash
-ng serve
-```
+### App (el componente general)
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Es el esqueleto de toda la página. Se encarga de montar el resto y darle estructura: arriba tiene el **header** con el logo de dptienda y el menú que te lleva a las secciones, en medio el hero de bienvenida y por debajo el **footer** con los enlaces y el copyright. Es, en resumen, el envoltorio que une las dos secciones que vienen a continuación.
 
-## Code scaffolding
+### Products
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Es la sección "Tienda", donde se muestra el catálogo. Contiene una cuadrícula de tarjetas con los cuatro videojuegos disponibles: The Legend of Zelda: Breath of the Wild, Metroid Prime, No More Heroes y Red Dead Redemption. Cada tarjeta muestra la carátula del juego, su plataforma, una descripción breve, el precio y un botón para añadirlo.
 
-```bash
-ng generate component component-name
-```
+### About
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Es la sección "Nosotros". Aquí se cuenta la historia de la tienda: cómo nació, su filosofía de seleccionar juegos con cariño y los valores con los que trabaja. Todo en un tono cercano, como hablar de colega a colega.
